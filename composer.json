@@ -1,0 +1,27 @@
+{
+    "name": "bookability/bookabilityl4",
+    "description": "Wrapper on the bookability class provided by bookability - with support for Laravel 4.
+    "keywords": ["laravel", "bookability", "bookabilityl4"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Davey",
+            "email": "http://http://www.richarddavey.com"
+        },
+        {
+            "name": "Daniel Oxenbury",
+            "email": "http://daniel.oxituk.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.*",
+        "bookability/bookability": "1.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "bookability\\bookabilityl4": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
