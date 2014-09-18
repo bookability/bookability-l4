@@ -12,7 +12,7 @@ In order to install add the following to your `composer.json` file within the `r
 
 	"require": {
 		…
-		"bookability/bookabilityl4": "1.0.*",
+		"bookability/bookability-l4": "1.0.*",
 		…	
 	}
 
@@ -22,7 +22,7 @@ Add the following to the `providers` array:
 
 	'providers' => array(
 		…
-		'bookability\bookabilityl4\bookabilityServiceProvider',
+		'Bookability\BookabilityL4\BookabilityServiceProvider',
 		…
 	),
 
@@ -30,16 +30,16 @@ Furthermore, add the following the the `aliases` array:
 
 	'aliases' => array(
 		…
-		'bookabilityWrapper'       => 'bookability\bookabilityl4\Facades\bookabilityWrapper',
+		'BookabilityWrapper' => 'Bookability\BookabilityL4\Facades\BookabilityWrapper',
 		…
 	),
 	
 Publish the configuration
 
-	$ php artisan config:publish bookability/bookabilityl4
+	$ php artisan config:publish bookability/bookability-l4
 
 Lastly, run the command `composer update`.
 
-_\* The subsequent steps should be repeated for any file `app.php` created for additionals environments._
+_\* The subsequent steps should be repeated for any file `app.php` created for additional environments._
 
 ----

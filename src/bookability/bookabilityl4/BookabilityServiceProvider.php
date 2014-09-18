@@ -1,4 +1,4 @@
-<?php namespace bookability\bookabilityl4;
+<?php namespace Bookability\BookabilityL4;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Config;
@@ -21,7 +21,7 @@ class BookabilityServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('bookability/bookabilityl4');
+        $this->package('Bookability/BookabilityL4');
     }
 
     /**

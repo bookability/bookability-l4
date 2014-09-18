@@ -1,4 +1,4 @@
-<?php namespace bookability\bookabilityl4;
+<?php namespace Bookability\BookabilityL4;
 
 use Mailchimp;
 
