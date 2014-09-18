@@ -1,34 +1,34 @@
 {
-    "name": "bookability/bookabilityl4",
-    "description": "Wrapper on the Bookability package provided by Bookability - with support for Laravel 4.",
-    "keywords": [
+	"name": "bookability/bookability-l4",
+	"description": "Wrapper on the Bookability package provided by Bookability - with support for Laravel 4.",
+	"keywords": [
 		"laravel", 
 		"bookability", 
 		"bookability-l4",
 		"twosuperior"
 	],
-    "license": "MIT",
-    "authors": [
+	"license": "MIT",
+	"authors": [
 		{
 			"name": "Richard Davey",
 			"email": "richard.davey@bookability.io",
 			"homepage": "http://www.bookability.io"
 		},
-        {
-            "name": "Daniel Oxenbury",
-            "email": "daniel.oxenbury@bookability.io",
+		{
+			"name": "Daniel Oxenbury",
+            		"email": "daniel.oxenbury@bookability.io",
 			"homepage": "http://www.bookability.io"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.0",
-        "illuminate/support": "4.*",
-        "bookability/bookability": "1.0.*"
-    },
-    "autoload": {
-        "psr-0": {
-            "Bookability\\BookabilityL4": "src/"
-        }
-    },
-    "minimum-stability": "dev"
+        	}
+    	],
+    	"require": {
+        	"php": ">=5.3.0",
+        	"illuminate/support": "4.*",
+        	"bookability/bookability": "1.0.*"
+    	},
+    	"autoload": {
+        	"psr-0": {
+            		"Bookability\\BookabilityL4": "src/"
+        	}
+    	},
+    	"minimum-stability": "dev"
 }
