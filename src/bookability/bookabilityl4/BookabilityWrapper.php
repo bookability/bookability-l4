@@ -1,6 +1,6 @@
 <?php namespace Bookability\BookabilityL4;
 
-use Mailchimp;
+use Bookability;
 
 class BookabilityWrapper
 {
@@ -27,37 +27,37 @@ class BookabilityWrapper
 
     public function projects()
     {
-        return $this->mc->projects;
+        return $this->ba->projects;
     }
 
     public function users()
     {
-        return $this->mc->users;
+        return $this->ba->users;
     }
 
     public function resources()
     {
-        return $this->mc->resources;
+        return $this->ba->resources;
     }
 
     public function events()
     {
-        return $this->mc->events;
+        return $this->ba->events;
     }
 
     public function customers()
     {
-        return $this->mc->customers;
+        return $this->ba->customers;
     }
 
     public function rules()
     {
-        return $this->mc->rules;
+        return $this->ba->rules;
     }
 
     public function availabilities()
     {
-        return $this->mc->availabilities;
+        return $this->ba->availabilities;
     }
 
 }
