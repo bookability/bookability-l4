@@ -2,7 +2,7 @@
 
 ----
 
-The package supports use with the [Laravel framework][2] (v4) providing a `BookabilityWrapper` facade.
+The package supports use with the [Laravel framework][2] (v4) providing a `Bookability` facade.
 
 ----
 
@@ -30,7 +30,7 @@ Furthermore, add the following the the `aliases` array:
 
 	'aliases' => array(
 		…
-		'BookabilityWrapper' => 'Bookability\BookabilityL4\Facades\BookabilityWrapper',
+		'Bookability' => 'Bookability\BookabilityL4\Facades\Bookability',
 		…
 	),
 	
