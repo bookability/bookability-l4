@@ -2,11 +2,10 @@
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Config;
-use Bookability;
+use Bookability\Bookability;
 
 class BookabilityServiceProvider extends ServiceProvider
 {
-
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -21,7 +20,7 @@ class BookabilityServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('Bookability/BookabilityL4');
+        $this->package('bookability/bookability-l4');
     }
 
     /**
@@ -30,13 +29,13 @@ class BookabilityServiceProvider extends ServiceProvider
      * @return void
      */
     public function register()
-    {
-        $this->app->singleton('bookability_wrapper', function ()
+	{
+        $this->app->singleton('bookability', function ()
         {
-            $mc = new Bookability(Config::get('bookability::dsn'));
-
-            return new BookabilityWrapper($mc);
+            return new Bookability(Config::get('bookability'));
         });
+		
+		$this->app->alias('bookability', 'Bookability\Bookability');
     }
 
     /**
@@ -46,7 +45,6 @@ class BookabilityServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('bookability_wrapper');
+        return array('bookability');
     }
-
 }

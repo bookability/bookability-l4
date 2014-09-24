@@ -18,17 +18,17 @@
 			"name": "Daniel Oxenbury",
             "email": "daniel.oxenbury@bookability.io",
 			"homepage": "http://www.bookability.io"
-        	}
-    	],
-    	"require": {
-        	"php": ">=5.3.0",
-        	"illuminate/support": "4.*",
-        	"bookability/bookability-php": "*"
-    	},
-    	"autoload": {
-        	"psr-0": {
-            		"Bookability\\BookabilityL4": "src/"
-        	}
-    	},
-    	"minimum-stability": "dev"
+        }
+    ],
+	"require": {
+    	"php": ">=5.3.0",
+    	"illuminate/support": "4.*",
+    	"bookability/bookability-php": "*"
+	},
+	"autoload": {
+    	"psr-0": {
+        		"Bookability\\BookabilityL4": "src/"
+    	}
+	},
+	"minimum-stability": "dev"
 }
