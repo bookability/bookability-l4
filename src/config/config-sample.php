@@ -11,6 +11,6 @@ return array(
     |
     */
 
-    'dsn' => 'http://username@project:apikey@www.bookability.io:80/api/v1'
+    'dsn' => 'http://username@project:apikey@api.bookability.io:80/v1'
 
 );

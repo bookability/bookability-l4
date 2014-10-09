@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Config;
-use Bookability\Bookability;
+use Bookability;
 
 class BookabilityServiceProvider extends ServiceProvider
 {
@@ -32,6 +32,10 @@ class BookabilityServiceProvider extends ServiceProvider
 	{
         $this->app->singleton('bookability', function ()
         {
+			$test = new Bookability(Config::get('bookability'));
+			echo $test->ping();
+			exit;
+				
             return new Bookability(Config::get('bookability'));
         });
 		
