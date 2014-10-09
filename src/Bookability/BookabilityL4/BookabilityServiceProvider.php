@@ -35,8 +35,6 @@ class BookabilityServiceProvider extends ServiceProvider
 			$instance = new Bookability(Config::get('bookability'));
 			return new BookabilityWrapper($instance);
         });
-		
-		// $this->app->alias('bookability', 'Bookability\Bookability');
     }
 
     /**

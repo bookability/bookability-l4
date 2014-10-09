@@ -19,7 +19,6 @@ class BookabilityWrapper {
 	 */
 	public function __construct(Bookability $instance)
 	{
-		print_r($instance); exit;
 		$this->instance = $instance;
 	}
 

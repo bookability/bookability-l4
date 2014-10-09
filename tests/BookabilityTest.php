@@ -39,7 +39,7 @@ class BookabilityTest extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases()
     {
         return array(
-            'Bookability' => 'Bookability\BookabilityL4\Facades\BookabilityWrapper',
+            'BookabilityWrapper' => 'Bookability\BookabilityL4\Facades\BookabilityWrapper',
         );
     }
 
@@ -50,16 +50,10 @@ class BookabilityTest extends \Orchestra\Testbench\TestCase
      */
     public function testEventsFind()
     {
-		//echo 'ok1';
 		// get events
-		$events = \Bookability::events()->find();
+		$events = \BookabilityWrapper::events()->find();
 		
-		//echo 'ok2';
-		//print_r($events);
-		exit;
-        //$users = \DB::table('users')->where('id', '=', 1)->first();
-
-        //$this->assertEquals('hello@orchestraplatform.com', $users->email);
-        //$this->assertTrue(\Hash::check('123', $users->password));
+		// has results
+        $this->assertTrue(count($events) > 0);
     }
 }
