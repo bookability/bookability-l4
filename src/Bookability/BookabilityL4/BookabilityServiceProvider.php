@@ -3,7 +3,7 @@
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Config;
 use Bookability;
-
+	
 class BookabilityServiceProvider extends ServiceProvider
 {
     /**
@@ -30,16 +30,13 @@ class BookabilityServiceProvider extends ServiceProvider
      */
     public function register()
 	{
-        $this->app->singleton('bookability', function ()
+        $this->app->singleton('bookability_wrapper', function ()
         {
-			$test = new Bookability(Config::get('bookability'));
-			echo $test->ping();
-			exit;
-				
-            return new Bookability(Config::get('bookability'));
+			$instance = new Bookability(Config::get('bookability'));
+			return new BookabilityWrapper($instance);
         });
 		
-		$this->app->alias('bookability', 'Bookability\Bookability');
+		// $this->app->alias('bookability', 'Bookability\Bookability');
     }
 
     /**
@@ -49,6 +46,6 @@ class BookabilityServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('bookability');
+        return array('bookability_wrapper');
     }
 }

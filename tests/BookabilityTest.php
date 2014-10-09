@@ -39,7 +39,7 @@ class BookabilityTest extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases()
     {
         return array(
-            'Bookability' => 'Bookability\BookabilityL4\Facades\Bookability',
+            'Bookability' => 'Bookability\BookabilityL4\Facades\BookabilityWrapper',
         );
     }
 
