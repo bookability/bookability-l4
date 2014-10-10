@@ -32,7 +32,7 @@ class BookabilityServiceProvider extends ServiceProvider
 	{
         $this->app->singleton('bookability_wrapper', function ()
         {
-			$instance = new Bookability(Config::get('bookability'));
+			$instance = new Bookability(['dsn' => Config::get('bookability-l4::dsn')]);
 			return new BookabilityWrapper($instance);
         });
     }
