@@ -10,7 +10,7 @@ class BookabilityTest extends \Orchestra\Testbench\TestCase
      */
     protected function getEnvironmentSetUp($app)
     {
-		$app['config']->set('bookability.dsn', 'http://richard.davey@twosuperior:cf22642dab4e7942a9b9dd3f654042ad7ff9f7b8@api.bookability.test:80/v1');
+		$app['config']->set('bookability.dsn', 'http://username@project:your-key-goes-here@api.bookability.io:80/v1');
     }
 
     /**
